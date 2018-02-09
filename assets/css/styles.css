@@ -1,0 +1,161 @@
+body {
+    font-family: Georgia, ‘Times New Roman’, serif;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0d596c;
+    word-wrap: break-word;
+}
+
+a:focus,
+a:visited,
+a:active {
+    color: #0d596c;
+}
+
+a:hover {
+    color: #289fbd;
+    text-decoration: underline;
+}
+
+.printer-container {
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+#cards {
+    margin: 1em 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.printer-header {
+    position: fixed;
+    width: 100%;
+}
+
+.printer-header h1 {
+    margin: 0;
+    padding: 5px 20px;
+    color: white;
+    background: #333;
+}
+
+.printer-header h1 select {
+    font-size: 16px;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    top: -5px;    
+}
+
+.printer-container {
+    padding-top: 4em;
+    margin-top: 0;
+}
+
+.card {
+    border: solid 2px #333;
+    width: calc(50% - 9px);
+    display: inline-block;
+    height: 400px;
+    vertical-align: top;
+    margin-top: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.card:nth-child(even) {
+    margin-left: 10px;
+}
+
+.card h2 {
+    font-size: 14pt;
+    padding: 0.2em;
+    margin: 0.25em 0 0;
+    border-bottom: solid 2px #333;
+    text-align: center;
+}
+
+.card .card-content {
+    padding: 0.5em;
+}
+
+.card .meta > div {
+    line-height: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.card .meta + hr {
+    border: none;
+    width: 66%;
+    border-top: solid 2px #333;
+}
+
+.card p strong:only-child {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+}
+
+.desc-container pre {
+    display: block;
+    white-space: pre-wrap;
+    padding-left: 0.5em;
+    border-left: solid 2px #333;
+}
+
+.desc-container code {
+    white-space: pre-wrap;
+}
+
+.desc-container blockquote {
+    margin: 1em 0;
+    padding-left: 0.5em;
+    border-left: dashed 2px #333;
+}
+
+@media print {
+    html, body {
+        height: 100%;
+    }
+    .printer-header {
+        display: none;
+    }
+
+    .card {
+        width: calc(50% - 9px);
+        display: inline-block;
+        height: 400px;
+        vertical-align: top;
+        margin-top: 0;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .card:nth-child(even) {
+        margin-left: 10px;
+    }
+
+    .card h2 {
+        font-size: 14pt;
+        padding: 0.2em;
+    }
+
+    .card p strong:only-child {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12pt;
+    }    
+
+    .card + .card {
+        margin-top: 0;
+    }
+}

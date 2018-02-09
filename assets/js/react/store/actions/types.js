@@ -1,0 +1,4 @@
+export const SELECT_BOARD_ID = 'SELECT_BOARD_ID';
+
+export const UPDATE_BOARDS = 'UPDATE_BOARDS';
+export const UPDATE_CARDS = 'UPDATE_CARDS';

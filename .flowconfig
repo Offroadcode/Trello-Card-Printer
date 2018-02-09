@@ -1,0 +1,7 @@
+[include]
+./assets/js/react/
+[ignore]
+.*/node_modules/.*
+<PROJECT_ROOT>/libdefs.js
+[libs]
+./libdefs.js
